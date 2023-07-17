@@ -1,10 +1,11 @@
 ## Media
 
 [Youtube](https://youtu.be/MGfgmy_0JM4) video with the resulting presentation.
-[Paper]() soon to be published.
+[Paper](https://arxiv.org/abs/2303.04478) linked to the presentation.
 
 ## How to build
 
+This presentation was meant to be a video.
 To build the presentation, first create a virtual environment with 
 <code>
 python3 -m venv env
@@ -27,11 +28,8 @@ Then, build the presentation using manim, with the command
 manim -qh main.py FullPresentation
 </code>
 
-In order to get a sharable html file, I use the [manim-slides](https://github.com/jeertmans/manim-slides) package, with the command
-<code>
-manim-slides convert FullPresentation FullPresentation.html
-</code>
-
-To see the presentation, open "FullPresentation.html" in a browser. If you want to share it, remember to include the folder with all the assets. 
+Manim will output the path to the produced video file.
+Remember that you can choose the quality of the video with the arguments to the call (in this case, -h is "high").
 
 Cheers!
+
